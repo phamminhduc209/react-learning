@@ -35,7 +35,7 @@
 .main {
   background: #fff;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0 10px 10px;
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
@@ -68,4 +68,45 @@
 
 .todo-count strong {
   font-weight: 300;
+}
+
+.new-todo, .edit {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  font-size: 24px;
+  line-height: 1.4em;
+  border: 0;
+  padding: 6px;
+  border: 1px solid #999;
+  box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none
+}
+
+.new-todo {
+  padding: 16px 16px 16px 45px;
+  border: none;
+  background: rgba(0, 0, 0, 0.003);
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+}
+
+.new-todo + label {
+  width: 60px;
+  height: 34px;
+  font-size: 0;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.new-todo + label:before {
+  content: '❯';
+  font-size: 22px;
+  color: #e6e6e6;
+  padding: 10px 27px 10px 27px;
 }

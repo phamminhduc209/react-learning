@@ -40,8 +40,9 @@ p {
 
 .TodoItem-complete {
   text-decoration: line-through;
+  text-decoration-color: #DDD;
 }
 
 .TodoItem-complete p {
-  color: #4d4d4d;
+  color: #DDD;
 }
